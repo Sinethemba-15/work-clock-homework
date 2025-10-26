@@ -4,28 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>World Clock</title>
   </head>
   <body>
     <div class="container">
       <h1>World Clock</h1>
 
-      <select>
+      <select id="city">
         <option value="">Select a city..</option>
-        <option value="">Pretoria</option>
-        <option value="">Cape Town</option>
-        <option value="">johnessburg</option>
+        <option value="current">My current location</option>
+        <option value="South_Africa/Gauteng">Pretoria</option>
+        <option value="South_Africa/Western_cape">Cape Town</option>
+        <option value="South_Africa/Gauteng">johnessburg</option>
       </select>
 
-      <div class="city">
-        <h2>Pretoria za</h2>
-        <div class="date">October 26th 2025</div>
-        <div class="time">1:48:15 AM</div>
-      </div>
-      <div class="city">
-        <h2>Cape Town za</h2>
-        <div class="date">October 26th 2025</div>
-        <div class="time">1:48:15 AM</div>
+      <div id="cities">
+        <div class="city" id="Pretoria">
+          <h2>Pretoria za</h2>
+          <div class="date">October 26th 2025</div>
+          <div class="time">1:48:15 AM</div>
+        </div>
+        <div class="city" id="Cape-town">
+          <h2>Cape Town za</h2>
+          <div class="date"></div>
+          <div class="time"></div>
+        </div>
       </div>
     </div>
     <footer>
