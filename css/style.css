@@ -1,1 +1,10 @@
-background{color: pink;}
+body {
+  color: pink;
+}
+h1 {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+}
