@@ -11,14 +11,25 @@ function updateTime() {
     );
   }
 
-  let capeTownElement = document.querySelector("#Cape-town");
-  if (capeTownElement) {
-    let capeTownDateElement = capeTownElement.querySelector(".date");
-    let capeTownTimeElement = capeTownElement.querySelector(".time");
-    let capeTownTime = moment().tz("South_Africa/Western_cape");
+  let losAngelesElement = document.querySelector("#los-angeles");
+  if (losAngelesElement) {
+    let losAngelesDateElement = losAngelesElement.querySelector(".date");
+    let losAngelesTimeElement = losAngelesElement.querySelector(".time");
+    let losAngelesTime = moment().tz("America/Los_Angeles");
 
-    capeTownDateElement.innerHTML = capeTownTime.format("MMMM	Do YYYY");
-    capeTownTimeElement.innerHTML = capeTownTime.format(
+    losAngelesDateElement.innerHTML = losAngelesTime.format("MMMM	Do YYYY");
+    losAngelesTimeElement.innerHTML = losAngelesTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
+  let parisElement = document.querySelector("#paris");
+  if (parisElement) {
+    let parisDateElement = parisElement.querySelector(".date");
+    let parisTimeElement = parisElement.querySelector(".time");
+    let parisTime = moment().tz("Europe/Paris");
+
+    parisDateElement.innerHTML = parisTime.format("MMMM	Do YYYY");
+    parisTimeElement.innerHTML = parisTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
